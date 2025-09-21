@@ -1,0 +1,71 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NASA APOD — Infinite Scroll</title>
+  <link rel="stylesheet" href="style.css">
+  	
+</head>
+<body>
+  <main>
+    <section id="grid" class="grid"></section>
+    <div id="loader" class="loader"><div class="spin"></div></div>
+  </main>  <div id="modalBack" class="modal-backdrop">
+    <div class="modal"> 
+      <div id="modalMedia" class="modal-media"></div>
+      
+      <div class="modal-body">
+        <h2 id="mTitle"></h2> 
+        <div><span id="mDate" class="badge"></span> <span id="mType" class="badge"></span></div>
+        <br>
+           	<button class="telegram-button" onclick="openTelegram()">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+  </svg>
+@NasaExplorBot
+</button>
+<p id="mDesc"></p>
+        <div class="modal-actions">
+          <button id="mDownload" class="icon-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+       viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 5v14"></path>
+    <path d="M19 12l-7 7-7-7"></path>
+  </svg>
+</button>
+          <button id="mOpen" class="icon-btn">Open</button>
+          
+          <button id="mClose" class="icon-btn close-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+       viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </svg>
+</button>
+   <br>
+   	
+   
+<div>
+
+	</div>
+        </div>
+      </div>
+    </div>
+    <br> <br> 
+  </div>
+     
+     
+<button id="toTop">
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+       viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 15l7-7 7 7"></path>
+  </svg>
+</button>
+  <script src="sc.js"></script>
+</body>
+</html>
